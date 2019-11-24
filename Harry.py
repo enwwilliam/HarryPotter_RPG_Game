@@ -1,4 +1,5 @@
 from sys import exit
+
 first_name = input("""What is your name again?
 First name: """)
 last_name = input("Last name: ")
@@ -11,7 +12,7 @@ and you can die""")
 input("So be cautious\n")
 
 input("Sweats ooze into your newly bought robe")
-input("Your feet tip toe into the ground anxiously")
+input("Your feet tip toe to the ground anxiously")
 
 def sortingHat():
     print(f"Finally the sorting hat calls '{first_name} {last_name}'")
@@ -81,9 +82,10 @@ def sortingHat():
     print(f"The house of {house} clap their hands")
     input("A month later...")
 
+    return(house)
+
 
 def start():
-    sortingHat()
     input("It was rowdy in the great hall\n")
     input("Newspapers are everywhere\n")
     input("You look around...\n")
@@ -216,4 +218,5 @@ def finish():
     input("To be continued\n")
     exit(0)
 
+house = sortingHat()
 start()
